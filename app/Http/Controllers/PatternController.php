@@ -21,4 +21,11 @@ class PatternController extends Controller
 
         return response()->json($adapterRunner->runCode(), 200);
     }
+
+    public function decorator()
+    {
+        $decoratorRunner = new \App\Domain\Structural\Decorator\CodeRunner(); 
+
+        return response()->json($decoratorRunner->runCode(), 200);
+    }
 }

@@ -10,3 +10,4 @@ Route::get('/user', function (Request $request) {
 
 Route::get('visitor', [PatternController::class, 'visitor']);
 Route::get('adapter', [PatternController::class, 'adapter']);
+Route::get('decorator', [PatternController::class, 'decorator']);
