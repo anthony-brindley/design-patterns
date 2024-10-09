@@ -2,7 +2,7 @@
 
 namespace App\Domain\Structural\Adapter\Contracts;
 
-interface RoundPeg
+interface IsRound
 {
     public function getRadius(): int;
 }

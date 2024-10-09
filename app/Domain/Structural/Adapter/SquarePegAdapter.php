@@ -2,9 +2,9 @@
 
 namespace App\Domain\Structural\Adapter;
 
-use App\Domain\Structural\Adapter\Contracts\RoundPeg;
+use App\Domain\Structural\Adapter\RoundPeg;
 
-class SquarePegAdapter implements RoundPeg
+class SquarePegAdapter extends RoundPeg
 {
     public function __construct(
         protected SquarePeg $peg
@@ -13,6 +13,6 @@ class SquarePegAdapter implements RoundPeg
 
     public function getRadius(): int
     {
-        return $this->peg->getWidth();
+        return $this->peg->getWidth() / 2;
     }
 }

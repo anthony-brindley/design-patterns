@@ -9,3 +9,4 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::get('visitor', [PatternController::class, 'visitor']);
+Route::get('adapter', [PatternController::class, 'adapter']);
