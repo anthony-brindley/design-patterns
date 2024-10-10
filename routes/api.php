@@ -14,3 +14,4 @@ Route::get('decorator', [PatternController::class, 'decorator']);
 Route::get('state', [PatternController::class, 'state']);
 Route::get('strategy', [PatternController::class, 'strategy']);
 Route::get('factory', [PatternController::class, 'factory']);
+Route::get('builder', [PatternController::class, 'builder']);

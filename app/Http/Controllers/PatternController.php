@@ -49,4 +49,11 @@ class PatternController extends Controller
 
         return response()->json($factoryRunner->runCode(), 200);
     }
+
+    public function builder()
+    {
+        $builderRunner = new \App\Domain\Creational\Builder\CodeRunner;
+        //new \App\Domain\Creational\Builder\CodeRunner;
+        return response()->json($builderRunner->runCode(), 200);
+    }
 }
