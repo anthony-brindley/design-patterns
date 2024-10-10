@@ -42,4 +42,11 @@ class PatternController extends Controller
 
         return response()->json($strategyRunner->runCode(), 200);
     }
+
+    public function factory()
+    {
+        $factoryRunner = new \App\Domain\Creational\Factory\CodeRunner;
+
+        return response()->json($factoryRunner->runCode(), 200);
+    }
 }
