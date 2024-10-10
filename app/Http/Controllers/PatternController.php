@@ -28,4 +28,18 @@ class PatternController extends Controller
 
         return response()->json($decoratorRunner->runCode(), 200);
     }
+
+    public function state()
+    {
+        $stateRunner = new \App\Domain\Behavioral\State\CodeRunner();
+
+        return response()->json($stateRunner->runCode(), 200);
+    }
+
+    public function strategy()
+    {
+        $strategyRunner = new \App\Domain\Behavioral\Strategy\CodeRunner;
+
+        return response()->json($strategyRunner->runCode(), 200);
+    }
 }
